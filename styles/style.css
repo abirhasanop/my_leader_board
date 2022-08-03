@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Poppins:wght@400;500&family=Quicksand:wght@600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.container{
+    width: 900px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.section_title{
+    color: #562EFF;
+    font-size: 24px;
+    font-weight: 500px;
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 121px;
+
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.player_name{
+    margin-left: 16px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* blogs starts */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 26px;
+    justify-content: center;
+}
+.blog{
+    display: flex;
+    width: 80%;
+}
+.thumnail{
+    margin-right: 10px;
+}
+.thumnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog_info h3{
+    font-size: 20px;
+}
+.blog_info p{
+    color: #562EFF;
+    font-size: 16px;
+}
+.blog_info p span{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+/* blogs ends */
+
+
+/* course starts here */
+.courses{
+    display: flex;
+}
+.banner_img img{
+    width: 224px;
+}
+.course_detailes h2{
+    font-size: 20px;
+}
+.course_detailes a {
+    text-decoration: none;
+    color: #ED6B4F;
+    font-size: 15px;
+}
+/* course starts here */
+
+/* responsivenes starts here */
+@media only screen and (max-width:576px) {
+    .container{
+        width: 100%;
+    }
+    .section_title{
+        text-align: center;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        /* justify-content: center; */
+    }
+    .player{
+        flex-direction: column;
+    }
+    .courses{
+        flex-direction: column;
+        align-items: center;
+    }
+    .course{
+        margin-bottom: 30px;
+    }
+    .banner_img{
+        display: flex;
+        justify-content: center;
+        /* margin: 0 auto; */
+    }
+    .course_detailes{
+        text-align: center;
+    }
+    .course_detailes h2{
+        margin-bottom: 5px;
+
+    }
+}
+/* responsivenes ends here */
